@@ -53,7 +53,7 @@ it provides api to
  # Setup 
  install dependencies 
  npm install 
- (make sure mongodb running locally )
+ # (make sure mongodb running locally ) or if you have atlas mongodb than you can change  the url in .env
 
  the applications uses 
  mongodb://127.0.0.1:27017/dictionaryDB
