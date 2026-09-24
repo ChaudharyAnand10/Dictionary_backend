@@ -1,4 +1,4 @@
-#Backend 
+# Backend 
 
 Overview 
 
@@ -10,7 +10,7 @@ it provides api to
  - Get word Suggestions based on a prefix 
  - Track word frequency 
 
- #Data Structure
+ # Data Structure
 
  Each word is stored in mongodb like this 
  {
@@ -23,7 +23,7 @@ it provides api to
 
  the wird field is unique so duplicate word are not added 
 
- #Logic and Approach 
+ # Logic and Approach 
 
 
  1. Add word 
@@ -50,7 +50,7 @@ it provides api to
  if frquency are equal , sort alphabetically 
  return maximum k suggestions 
 
- #Setup 
+ # Setup 
  install dependencies 
  npm install 
  (make sure mongodb running locally )
@@ -58,7 +58,7 @@ it provides api to
  the applications uses 
  mongodb://127.0.0.1:27017/dictionaryDB
 
- #Run
+ # Run
  npm start
 
 
@@ -66,7 +66,7 @@ it provides api to
  http://localhost:4000
 
 
- #Test Apis 
+ # Test Apis 
 
  ADD Word
  POST
