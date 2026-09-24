@@ -2,16 +2,20 @@ import express from "express"
 import mongoose from "mongoose"
 import router from "./routes/wordRoutes.js";
 import cors from "cors"
+import dotenv from "dotenv"
+
+dotenv.config()
+
 
 const app = express();
 
 app.use(cors())
 app.use(express.json())
-const PORT = 4000;
+const PORT = process.env.PORT;
 
 app.use("/api",router)
 
-mongoose.connect("mongodb://127.0.0.1:27017/dictionaryDB")
+mongoose.connect(process.env.MONGODB_URL)
 .then(()=>{
     console.log(" mongodb connected");
 
